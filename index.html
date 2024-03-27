@@ -9,12 +9,12 @@
 <body>
     <div class="age-calculate">
         <h1>Age Calculator</h1>
-        <form>
+        <form id="ageForm">
             <div class="block">
                 <p class="title">Enter your birthdate:</p>
                 <input type="date" id="inputDob" required>
             </div>
-            <button onclick="getAge()">Get Age</button>
+            <button type="button" onclick="getAge()">Get Age</button>
         </form>
         <p id="currentAge"></p>
     </div>
