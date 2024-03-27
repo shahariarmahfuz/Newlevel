@@ -12,5 +12,12 @@ function getAge() {
         return;
     }
 
-    document.getElementById("currentAge").textContent = `Your current age is ${yearDiff} years, ${monthDiff} months, and ${dateDiff} days.`;
+    const ageText = `Your current age is ${yearDiff} years, ${monthDiff} months, and ${dateDiff} days.`;
+    document.getElementById("currentAge").textContent = ageText;
+
+    // Prevent form submission (which causes page refresh)
+    const ageForm = document.getElementById("ageForm");
+    ageForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+    });
 }
