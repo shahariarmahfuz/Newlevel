@@ -22,12 +22,15 @@ body {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #333;
+    /* Neon/Glowing Light Effect */
+    text-shadow: 0px 0px 10px #00c2cb, 0px 0px 20px #fff;
 }
 
 /* Input field styles */
@@ -57,9 +60,16 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Display area for calculated age */
-#currentAge {
-    font-size: 18px;
-    text-align: center;
-    margin-top: 20px;
+/* Diffuse Reflection Effect */
+.age-calculate h1::before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #00c2cb;
+    transform: perspective(10px) rotateX(10deg) scale(1, 0.2);
+    filter: blur(1em);
+    opacity: 0.5;
 }
