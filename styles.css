@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #1a1a1a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,16 +19,16 @@ body {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #333;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    color: #fff;
 }
 
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #333;
     /* Neon/Glowing Light Effect */
     text-shadow: 0px 0px 10px #00c2cb, 0px 0px 20px #fff;
 }
