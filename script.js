@@ -5,19 +5,4 @@ function getAge() {
 
     const yearDiff = now.getFullYear() - dob.getFullYear();
     const monthDiff = now.getMonth() - dob.getMonth();
-    const dateDiff = now.getDate() - dob.getDate();
-
-    if (yearDiff < 0) {
-        document.getElementById("currentAge").textContent = "Invalid Date";
-        return;
-    }
-
-    const ageText = `Your current age is ${yearDiff} years, ${monthDiff} months, and ${dateDiff} days.`;
-    document.getElementById("currentAge").textContent = ageText;
-
-    // Prevent form submission (which causes page refresh)
-    const ageForm = document.getElementById("ageForm");
-    ageForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-    });
-}
+    const dateDiff = now.getDate() - dob.getDate
